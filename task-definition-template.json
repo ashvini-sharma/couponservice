@@ -1,4 +1,19 @@
 {
+  "environment": [
+  {
+    "name": "SPRING_DATASOURCE_URL",
+    "value": "jdbc:mysql://coupon-db.c1umeey4y3ip.ap-south-1.rds.amazonaws.com:3306/mysql"
+  },
+  {
+    "name": "SPRING_DATASOURCE_USERNAME",
+    "value": "root"
+  },
+  {
+    "name": "SPRING_DATASOURCE_PASSWORD",
+    "value": "secret123"
+  }
+],
+
   "family": "couponservice-taskDefinition",
   "requiresCompatibilities": [
     "FARGATE"
