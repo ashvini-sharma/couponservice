@@ -1,0 +1,31 @@
+version: '3.9'
+
+services:
+
+  mysql-container:
+    image: mysql
+    container_name: mysql-container
+    environment:
+      MYSQL_ROOT_PASSWORD: secret123
+    volumes:
+      - mysqlData:/var/lib/mysql
+    networks:
+      - myNet
+    
+
+  coupon-service:
+    build: .
+    container_name: couponservice
+    depends_on:
+      - mysql-container
+    ports:
+      - "8080:8080"
+    networks:
+      - myNet
+
+volumes:
+  mysqlData:
+    external: true
+
+networks:
+  myNet:

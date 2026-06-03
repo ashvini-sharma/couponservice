@@ -1,0 +1,37 @@
+{
+  "family": "couponservice-taskDefinition",
+  "requiresCompatibilities": [
+    "FARGATE"
+  ],
+  "networkMode": "awsvpc",
+  "cpu": "256",
+  "memory": "512",
+  "executionRoleArn": "arn:aws:iam::562437414962:role/ecsTaskExecutionRole",
+
+  "containerDefinitions": [
+    {
+      "name": "couponservice",
+      "image": "IMAGE_URI_PLACEHOLDER",
+      "essential": true,
+
+      "portMappings": [
+        {
+          "containerPort": 8080,
+          "hostPort": 8080,
+          "protocol": "tcp",
+          "appProtocol": "http"
+        }
+      ],
+
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "/ecs/couponservice",
+          "awslogs-region": "ap-south-1",
+          "awslogs-stream-prefix": "ecs",
+          "awslogs-create-group": "true"
+        }
+      }
+    }
+  ]
+}
