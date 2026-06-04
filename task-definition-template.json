@@ -1,5 +1,5 @@
 {
-  "family": "secure-app-taskDefinition",
+  "family": "couponservice-taskDefinition",
   "requiresCompatibilities": [
     "FARGATE"
   ],
@@ -26,7 +26,7 @@
       "environment": [
         {
           "name": "SPRING_DATASOURCE_URL",
-          "value": "jdbc:mysql://coupon-db.c1umeey4y3ip.ap-south-1.rds.amazonaws.com:3306/mysql"
+          "value": "jdbc:mysql://coupon-db.c1umeey4y3ip.ap-south-1.rds.amazonaws.com:3306/coupondb"
         },
         {
           "name": "SPRING_DATASOURCE_USERNAME",

@@ -7,9 +7,9 @@ pipeline {
         AWS_REGION = 'ap-south-1'
         S3_BUCKET = 'jenkins-project-springboot-artifacts'
         ECR_REPO = 'couponservicerepo'
-        AWS_ECS_CLUSTER = 'secure-app-cluster-prod'
-        AWS_ECS_SERVICE = 'secure-app-service-prod'
-        AWS_ECS_TD_FAMILY = 'secure-app-taskDefinition'
+        AWS_ECS_CLUSTER = 'couponservice-cluster-prod'
+        AWS_ECS_SERVICE = 'couponservice-service-prod'
+        AWS_ECS_TD_FAMILY = 'couponservice-taskDefinition'
     }
 
     stages {
