@@ -1,5 +1,5 @@
 {
-  "family": "couponservice-taskDefinition",
+  "family": "secure-app-taskDefinition",
   "requiresCompatibilities": [
     "FARGATE"
   ],
@@ -30,7 +30,7 @@
         },
         {
           "name": "SPRING_DATASOURCE_USERNAME",
-          "value": "root"
+          "value": "admin"
         },
         {
           "name": "SPRING_DATASOURCE_PASSWORD",
