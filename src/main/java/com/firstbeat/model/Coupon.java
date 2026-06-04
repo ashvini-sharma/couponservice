@@ -2,14 +2,17 @@ package com.firstbeat.model;
 
 import java.math.BigDecimal;
 
+/*
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+*/
 
-@Entity
+//@Entity
 public class Coupon {
 	
+	/*
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
@@ -41,6 +44,6 @@ public class Coupon {
 	public void setExp_date(String exp_date) {
 		this.exp_date = exp_date;
 	}
-	
+	*/
 
 }

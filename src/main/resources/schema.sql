@@ -1,6 +1,0 @@
-CREATE TABLE IF NOT EXISTS coupon (
-    id BIGINT AUTO_INCREMENT PRIMARY KEY,
-    code VARCHAR(255),
-    discount DOUBLE,
-    exp_date VARCHAR(255)
-);
